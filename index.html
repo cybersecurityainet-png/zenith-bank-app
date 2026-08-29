@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zenith Bank - Overview</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="status-bar">
+                <span class="time" id="time">15:48</span>
+                <div class="signal">
+                    <span class="lte">LTE</span>
+                    <span class="signal-strength">66</span>
+                    <span class="battery">🔋</span>
+                </div>
+            </div>
+            <div class="header-top">
+                <button class="menu-btn" id="menuBtn">☰</button>
+                <h1>Overview</h1>
+                <div class="logo">Z</div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Balance Card -->
+            <section class="balance-card">
+                <div class="balance-header">TOTAL BALANCE</div>
+                <div class="balance-amount" id="displayBalance">₦81.67</div>
+                <div class="balance-actions">
+                    <button class="hide-balance-btn" id="hideBalanceBtn">Hide balance</button>
+                    <button class="toggle-btn" id="balanceToggle">
+                        <span class="toggle-switch"></span>
+                    </button>
+                </div>
+            </section>
+
+            <!-- Account Details -->
+            <section class="account-section">
+                <div class="account-header">
+                    <span class="account-number">1216352932 - ACTIVE</span>
+                </div>
+                <div class="account-name">BARASAL ALIYU MUKHTAR MULTI B.LINKS</div>
+                <div class="account-balance">
+                    <span class="balance-amount" id="accountBalance">₦81.67</span>
+                    <button class="hide-balance-btn" id="hideBalance2">Hide balance</button>
+                    <button class="toggle-btn" id="balanceToggle2">
+                        <span class="toggle-switch"></span>
+                    </button>
+                </div>
+                <div class="ledger-info">
+                    <span>Ledger Balance: <span id="ledgerBalance">₦81.67</span></span>
+                    <button class="history-btn" id="historyBtn">📅 History</button>
+                </div>
+            </section>
+
+            <!-- eaZyLinks Section -->
+            <section class="eazylinks-section">
+                <h2>eaZyLinks</h2>
+                <div class="eazylinks-grid">
+                    <button class="eazylink-item" data-action="qr-payments">
+                        <div class="eazylink-icon">📱</div>
+                        <p>QR Payments</p>
+                    </button>
+                    <button class="eazylink-item" data-action="travel">
+                        <div class="eazylink-icon">✈️</div>
+                        <p>Travel & Leisure</p>
+                    </button>
+                    <button class="eazylink-item" data-action="cable-tv">
+                        <div class="eazylink-icon">📺</div>
+                        <p>Cable TV</p>
+                    </button>
+                    <button class="eazylink-item" data-action="cards">
+                        <div class="eazylink-icon">💳</div>
+                        <p>Cards</p>
+                    </button>
+                    <button class="eazylink-item" data-action="mybvn">
+                        <div class="eazylink-icon">👤</div>
+                        <p>MyBVN</p>
+                    </button>
+                    <button class="eazylink-item" data-action="scheduled-payments">
+                        <div class="eazylink-icon">🔄</div>
+                        <p>Scheduled Payments</p>
+                    </button>
+                    <button class="eazylink-item" data-action="customize">
+                        <div class="eazylink-icon">⚙️</div>
+                        <p>Customize eaZylinks</p>
+                    </button>
+                    <button class="eazylink-item" data-action="settings">
+                        <div class="eazylink-icon">🔧</div>
+                        <p>Settings</p>
+                    </button>
+                </div>
+            </section>
+
+            <!-- Zenith Bank Banner -->
+            <section class="zenith-banner">
+                <div class="banner-content">
+                    <span class="zenith-text">ZENITH</span>
+                </div>
+            </section>
+
+            <!-- Bottom Navigation -->
+            <nav class="bottom-nav">
+                <button class="nav-item active" data-page="overview">
+                    <span class="nav-icon">📋</span>
+                    <span>Overview</span>
+                </button>
+                <button class="nav-item" data-page="airtime">
+                    <span class="nav-icon">📞</span>
+                    <span>Airtime</span>
+                </button>
+                <button class="nav-item" data-page="transfer">
+                    <span class="nav-icon">↔️</span>
+                    <span>Transfer</span>
+                </button>
+                <button class="nav-item" data-page="bills">
+                    <span class="nav-icon">📄</span>
+                    <span>Bills</span>
+                </button>
+            </nav>
+        </main>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="menu-close" id="menuClose">✕</button>
+        <nav class="menu-links">
+            <a href="#" class="menu-link">Dashboard</a>
+            <a href="#" class="menu-link">Accounts</a>
+            <a href="#" class="menu-link">Cards</a>
+            <a href="#" class="menu-link">Settings</a>
+            <a href="#" class="menu-link">Logout</a>
+        </nav>
+    </div>
+
+    <!-- Modal for Actions -->
+    <div class="modal" id="actionModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">✕</button>
+            <h2 id="modalTitle">Action</h2>
+            <p id="modalMessage">This feature is coming soon!</p>
+            <button class="modal-button" id="modalButton">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
