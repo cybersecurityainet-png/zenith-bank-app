@@ -44,9 +44,9 @@ function toggleBalance() {
         accountBalance.textContent = '••••';
         ledgerBalance.textContent = '••••';
     } else {
-        displayBalance.textContent = '₦81.67';
-        accountBalance.textContent = '₦81.67';
-        ledgerBalance.textContent = '₦81.67';
+        displayBalance.textContent = '₦136,000,000,000';
+        accountBalance.textContent = '₦136,000,000,000';
+        ledgerBalance.textContent = '₦136,000,000,000';
     }
 }
 
